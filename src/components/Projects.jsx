@@ -1,5 +1,6 @@
 import { PROJECTS } from "../constants"
 import { motion } from "framer-motion"
+import { BsGithub } from "react-icons/bs";
 const Projects = () => {
   return <div  className=" border-b border-neutral-900 pb-4">
     <motion.h2 
@@ -33,6 +34,10 @@ const Projects = () => {
                         </span>
                     ))    
                     }
+                    <a href={project.link
+                    } className="text-primary-500 font-semibold hover:">
+                        <BsGithub className="inline-block"/> 
+                    </a>
                 </motion.div>
                 
             </div>
