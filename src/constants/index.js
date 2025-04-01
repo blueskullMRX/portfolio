@@ -3,15 +3,14 @@ import project1 from "../assets/projects/FutureVision.jpg";
 import project2 from "../assets/projects/FuzzyCBR.jpg";
 import project3 from "../assets/projects/EFSA.jpg";
 import project4 from "../assets/projects/cardgame.jpg";
-import project5 from "../assets/projects/project-2.jpg";
+import project5 from "../assets/projects/ecomapi.png";
 import project6 from "../assets/projects/FSTlink.jpg";
 import project7 from "../assets/projects/portfolio.jpg";
 import project8 from "../assets/projects/Calender.jpg";
-import { link } from "framer-motion/client";
 
-export const HERO_CONTENT = `I am a passionate full-stack developer with a talent for building robust, scalable, and user-centric web applications. With extensive hands-on experience, I’ve mastered crafting seamless front-end experiences and architecting efficient back-end systems. My expertise spans a wide range of technologies, allowing me to create innovative solutions that drive meaningful impact, enhance business growth, and elevate user satisfaction. I thrive on solving challenges and transforming ideas into powerful, real-world applications. Let’s build the future together!`;
+export const HERO_CONTENT = `I am a versatile professional combining expertise in Data Science and Full-Stack Development. With a strong foundation in machine learning, statistical analysis, and data visualization, I create impactful solutions that bridge the gap between data insights and web applications. My skills span from building predictive models and implementing ML algorithms to developing scalable web applications. I excel at transforming complex data challenges into user-friendly solutions, leveraging both traditional statistical methods and cutting-edge AI technologies. Let's turn data into actionable insights and powerful applications together!`;
 
-export const ABOUT_TEXT = `Blueskull is a passionate Software Engineer and Data Scientist dedicated to creating impactful solutions at the intersection of technology and data. With expertise in machine learning, full-stack development, and data-driven decision-making, Blueskull combines innovative problem-solving with a deep understanding of cutting-edge tools and methodologies. From building intuitive web applications to developing advanced machine learning models, Blueskull thrives on transforming complex challenges into seamless, efficient systems that drive value and innovation. With a proven track record of delivering high-quality software products and leveraging data to inform strategic decisions, Blueskull is committed to pushing the boundaries of what’s possible and creating a brighter, smarter future for all.`;	
+export const ABOUT_TEXT = `I am a passionate Software Engineer and Data Scientist dedicated to creating impactful solutions at the intersection of technology and data. With expertise in machine learning, full-stack development, and data-driven decision-making, I combine innovative problem-solving with a deep understanding of cutting-edge tools and methodologies. From building intuitive web applications to developing advanced machine learning models, I thrive on transforming complex challenges into seamless, efficient systems that drive value and innovation. With a proven track record of delivering high-quality software products and leveraging data to inform strategic decisions, I am committed to pushing the boundaries of what's possible and creating a brighter, smarter future for all.`;	
 
 export const EXPERIENCES = [
   {
@@ -77,7 +76,7 @@ export const PROJECTS = [
     title: "E-Commerce Api",
     image: project5,
     description:
-      "A fully functional e-commerce Api ,including the whole ecosystem from browsing to payment ,with the usage of cloudinary as a cloud-platform to store the images and the JWT to secure the Api .",
+      "Developed a comprehensive RESTful E-commerce API with complete order management, product catalog, and secure payment processing capabilities. Implemented JWT authentication for secure endpoints, integrated Cloudinary for scalable image management, and designed a robust database schema for efficient data handling.",
     technologies: ["C#", ".Net-Core", "SQL-server"],
     link:"#",
   },

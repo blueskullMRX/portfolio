@@ -5,6 +5,7 @@ import { SiDjango } from "react-icons/si";
 import { SiFlutter } from "react-icons/si";
 
 
+
 const iconVariants=(duration) => ({
   initial :{y:-10},
   animate : {y:[10,-10],transition:{duration: duration ,ease :"linear",repeat:Infinity,repeatType:"reverse"}},
@@ -54,6 +55,7 @@ const Tech = () => {
         className="rounded-2xl border-4 border-neutral-800 p-4">
             <SiFlutter className="text-7xl text-cyan-500"/>
         </motion.div>
+        
       </motion.div>
     </div>
   )
