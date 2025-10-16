@@ -1,9 +1,9 @@
 import Hero from "./components/Hero"
-import Navbar from "./components/navbar"
-import About from "./components/about"
+import Navbar from "./components/Navbar"
+import About from "./components/About"
 import Tech from "./components/Tech"
 import Projects from "./components/Projects"
-import Contact from "./components/contact"
+import Contact from "./components/Contact"
 const App = () => {
   return (
     
