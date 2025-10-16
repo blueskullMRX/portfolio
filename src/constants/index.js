@@ -7,49 +7,63 @@ import project5 from "../assets/projects/ecomapi.png";
 import project6 from "../assets/projects/FSTlink.jpg";
 import project7 from "../assets/projects/portfolio.jpg";
 import project8 from "../assets/projects/Calender.jpg";
+import project9 from "../assets/projects/amazon.jpg";
+import project10 from "../assets/projects/project-2.jpg";
+import { title } from "framer-motion/client";
 
 export const HERO_CONTENT = `I am a versatile professional combining expertise in Data Science and Full-Stack Development. With a strong foundation in machine learning, statistical analysis, and data visualization, I create impactful solutions that bridge the gap between data insights and web applications. My skills span from building predictive models and implementing ML algorithms to developing scalable web applications. I excel at transforming complex data challenges into user-friendly solutions, leveraging both traditional statistical methods and cutting-edge AI technologies. Let's turn data into actionable insights and powerful applications together!`;
 
 export const ABOUT_TEXT = `I am a passionate Software Engineer and Data Scientist dedicated to creating impactful solutions at the intersection of technology and data. With expertise in machine learning, full-stack development, and data-driven decision-making, I combine innovative problem-solving with a deep understanding of cutting-edge tools and methodologies. From building intuitive web applications to developing advanced machine learning models, I thrive on transforming complex challenges into seamless, efficient systems that drive value and innovation. With a proven track record of delivering high-quality software products and leveraging data to inform strategic decisions, I am committed to pushing the boundaries of what's possible and creating a brighter, smarter future for all.`;	
 
 export const EXPERIENCES = [
-  {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+  
+  { 
+    period: "July 2025 - August 2025",
+    duration: "2 months",
+    role: "AI Developer – Intelligent Healthcare Platform",
+    company: "DIGIUP",
+    companyLogo: "../assets/digiup.png",
+    description: ` 
+  Developed SEHATOKA, an AI-driven healthcare platform integrating intelligent diagnosis and workflow automation.
+  Designed and deployed machine learning models for symptom-based patient routing, disease risk prediction, and an NLP-powered doctorchatbot.
+  Integrated Large Language Models (LLMs) for clinical decision support and automated patient management.`,
+    technologies: ["Python", "NLP", "BERT (Language Model)", "Artificial Intelligence (AI)","Postgres","FastAPI","React","Docker","Celery","Redis"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    period: "April 2024 - June 2024",
+    duration: "3 months",
+    role: "Web Developer",
+    company: "Smart Automation Technologies",
+    companyLogo: "../assets/sa.jpg",
+    description: ` 
+  Developed a comprehensive solution for auditing and managing hardware and logistics inventory using the MEAN stack.  
+  Designed and implemented the resource management section of the platform, enhancing user experience.  
+  Conducted thorough testing and debugging to ensure system reliability and performance.  
+  Collaborated with cross-functional teams at Smart Automation Technologies Pvt. Ltd. to drive project success.`,
+    technologies: ["AngularJS", "MongoDB", "MindManager", "PowerDesigner", "Express.js", "Node.js","HTML","CSS","JavaScript"],
   },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
+  
 ];
 
 export const PROJECTS = [
+  {title:"Real-Time Amazon Review Sentiment Analysis",
+    image: project9,
+    description:"Real-Time Review Analysis Platform A comprehensive microservices-based solution for real-time sentiment analysis and review processing, featuring both static reporting and live streaming dashboards. 🏗️ Architecture Overview This platform implements a distributed microservices architecture designed for high-throughput review processing and real-time analytics.",
+    technologies: ["Python", "FastAPI", "Apache-kafka", "Apache-Spark", "MongoDB", "React"],
+    link:"https://github.com/blueskullMRX/Amazon_realTime_Reviews_Analysis"
+  },
+  {title:"Facial expression detection",
+    image: project10,
+    description:"Developed a CNN model using TensorFlow/Keras for emotion recognition from facial images with preprocessing and classification metrics evaluation.Deployed a Streamlit app for real-time emotion detection via webcam and analysis of uploaded images or videos.",
+    technologies: ["Python", "TensorFlow", "Keras", "OpenCV", "Streamlit"],
+    link:"https://github.com/blueskullMRX/Facial-expression-detection"
+  },
   {
     title:"FutureVision",
     image: project1,
     description:"Data Management and Processing Application : Design and development of a web application for importing, managing, and processing data (CSV, Excel, JSON…) and applying Machine Learning models using the Streamlit framework (Python).",
     technologies: ["Python", "Streamlit", "Pandas", "Numpy", "Scikit-learn", "Plotly-Express"],
-    link:"#",
+    link:"https://github.com/blueskullMRX/FutureVision.git",
   },
   {
     title:"Performance evaluation of fuzzy clustered CBR",
