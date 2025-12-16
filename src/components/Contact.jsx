@@ -1,6 +1,6 @@
 import { CONTACT } from "../constants"
 import { motion } from "framer-motion"
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaPaperPlane } from "react-icons/fa"
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaPaperPlane, FaDownload, FaEye } from "react-icons/fa"
 
 const contactInfo = [
   { icon: <FaMapMarkerAlt />, label: "Location", value: CONTACT.address },
@@ -61,7 +61,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
-          className="mt-12 text-center"
+          className="mt-12 text-center space-y-4"
         >
           <motion.a
             href={`mailto:${CONTACT.email}`}
@@ -72,6 +72,31 @@ const Contact = () => {
             <FaPaperPlane />
             Let's Work Together
           </motion.a>
+          
+          {/* CV Buttons */}
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-6">
+            <motion.a
+              href="/portfolio/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-2 px-6 py-3 glass rounded-full text-white font-medium hover:bg-white/10 transition-all duration-300"
+            >
+              <FaEye />
+              View CV
+            </motion.a>
+            <motion.a
+              href="/portfolio/cv.pdf"
+              download="Zakaria_Amgrout_CV.pdf"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-2 px-6 py-3 glass rounded-full text-white font-medium hover:bg-white/10 transition-all duration-300"
+            >
+              <FaDownload />
+              Download CV
+            </motion.a>
+          </div>
         </motion.div>
       </div>
     </section>

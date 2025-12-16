@@ -49,7 +49,7 @@ const Hero = () => {
             >
               <span className="h-[2px] w-12 bg-gradient-to-r from-purple-500 to-pink-500"></span>
               <span className="text-2xl sm:text-3xl font-light bg-gradient-to-r from-pink-300 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                Software Developer & Data Scientist
+                Data Scientist & AI Engineer
               </span>
             </motion.div>
             
@@ -83,6 +83,16 @@ const Hero = () => {
                 className="px-8 py-3 glass rounded-full text-white font-medium hover:bg-white/10 transition-all duration-300"
               >
                 View Projects
+              </motion.a>
+              <motion.a
+                href="/portfolio/cv.pdf"
+                download="Zakaria_Amgrout_CV.pdf"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 glass rounded-full text-white font-medium hover:bg-white/10 transition-all duration-300 flex items-center gap-2"
+              >
+                <FaDownload />
+                Download CV
               </motion.a>
             </motion.div>
           </div>
