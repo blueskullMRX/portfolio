@@ -9,7 +9,9 @@ import project7 from "../assets/projects/portfolio.jpg";
 import project8 from "../assets/projects/Calender.jpg";
 import project9 from "../assets/projects/amazon.jpg";
 import project10 from "../assets/projects/project-2.jpg";
-import { title } from "framer-motion/client";
+import adaptiveSignal from "../assets/projects/adaptive-signal-control.svg";
+import profileRecommender from "../assets/projects/profile-project-recommender.svg";
+import testCaseGenerator from "../assets/projects/llm-test-case-generator.svg";
 
 export const HERO_CONTENT = `I am a versatile professional combining expertise in Data Science and Full-Stack Development. With a strong foundation in machine learning, statistical analysis, and data visualization, I create impactful solutions that bridge the gap between data insights and web applications. My skills span from building predictive models and implementing ML algorithms to developing scalable web applications. I excel at transforming complex data challenges into user-friendly solutions, leveraging both traditional statistical methods and cutting-edge AI technologies. Let's turn data into actionable insights and powerful applications together!`;
 
@@ -48,6 +50,27 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Adaptive Signal Control v2",
+    image: adaptiveSignal,
+    description:
+      "A web-based traffic signal control system built with JavaScript and TypeScript. It uses adaptive decision-making and real-time logic to optimize traffic flow, reduce congestion, and improve intersection performance through a responsive front-end interface.",
+    technologies: ["JavaScript", "TypeScript", "HTML", "CSS"],
+  },
+  {
+    title: "Profile to Project Recommender",
+    image: profileRecommender,
+    description:
+      "A web-based recommendation application that matches user profiles with relevant projects using profile attributes and data-driven recommendation logic. The project demonstrates personalized discovery, user profiling, and practical project-matching workflows.",
+    technologies: ["Recommendation Systems", "User Profiling", "Data Matching", "Web Application"],
+  },
+  {
+    title: "Automatic Test Case Generator with LLM for Web Apps",
+    image: testCaseGenerator,
+    description:
+      "An AI-powered web testing tool that uses large language models to generate meaningful test cases automatically. It streamlines QA workflows, reduces repetitive manual design, and improves testing coverage across web applications.",
+    technologies: ["Python", "Java", "TypeScript", "LLM", "HTML", "CSS", "Docker"],
+  },
   {title:"Real-Time Amazon Review Sentiment Analysis",
     image: project9,
     description:"Real-Time Review Analysis Platform A comprehensive microservices-based solution for real-time sentiment analysis and review processing, featuring both static reporting and live streaming dashboards. 🏗️ Architecture Overview This platform implements a distributed microservices architecture designed for high-throughput review processing and real-time analytics.",
