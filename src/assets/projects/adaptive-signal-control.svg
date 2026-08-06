@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
-  <title id="title">Adaptive Signal Control</title>
-  <desc id="desc">Abstract traffic intersection with adaptive signal lights.</desc>
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111827"/><stop offset="1" stop-color="#164e63"/></linearGradient></defs>
-  <rect width="800" height="450" fill="url(#bg)"/><path d="M0 330h800M400 0v450" stroke="#334155" stroke-width="92"/><path d="M0 330h800M400 0v450" stroke="#facc15" stroke-width="3" stroke-dasharray="22 18"/>
-  <rect x="72" y="70" width="106" height="220" rx="18" fill="#0f172a" stroke="#67e8f9" stroke-width="4"/><circle cx="125" cy="115" r="25" fill="#ef4444"/><circle cx="125" cy="180" r="25" fill="#facc15"/><circle cx="125" cy="245" r="25" fill="#22c55e"/>
-  <path d="M510 128h180M600 128v72" stroke="#67e8f9" stroke-width="8" stroke-linecap="round"/><circle cx="510" cy="128" r="12" fill="#22c55e"/><circle cx="690" cy="128" r="12" fill="#22c55e"/><text x="235" y="92" fill="#e0f2fe" font-family="Arial" font-size="30" font-weight="700">ADAPTIVE SIGNAL CONTROL</text><text x="235" y="125" fill="#a5f3fc" font-family="Arial" font-size="18">Real-time intersection optimization</text>
-</svg>
