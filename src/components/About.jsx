@@ -1,80 +1,53 @@
-import { ABOUT_TEXT } from "../constants/index"
-import aboutImg from "../assets/code212.jpg"
-import { motion } from "framer-motion"
-import { FaCode, FaBrain, FaRocket, FaLightbulb } from "react-icons/fa"
+import photo from "../assets/zakaria-code212.jpg";
+import { PROFILE } from "../data";
+import { useInView } from "../lib/motion";
+import Reveal from "./motion/Reveal";
 
-const highlights = [
-  { icon: <FaCode />, title: "Full-Stack Dev", desc: "End-to-end solutions" },
-  { icon: <FaBrain />, title: "Data Science", desc: "ML & AI expertise" },
-  { icon: <FaRocket />, title: "Innovation", desc: "Cutting-edge tech" },
-  { icon: <FaLightbulb />, title: "Problem Solver", desc: "Creative solutions" }
-]
+// Face position inside the photo, as percentages of its width and height.
+const FACE = { left: 38.3, top: 24.2, width: 18.9, height: 19.9 };
 
 const About = () => {
+  const [ref, inView] = useInView({ threshold: 0.35 });
+
   return (
-    <section id="about" className="py-20 border-b border-neutral-800/50">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="text-center mb-16"
-      >
-        <span className="text-purple-400 font-medium">Get to Know</span>
-        <h2 className="text-4xl sm:text-5xl font-bold mt-2 text-gradient">About Me</h2>
-      </motion.div>
-
-      <div className="flex flex-wrap items-center gap-12">
-        <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="w-full lg:w-5/12"
+    <section className="section wrap about" id="about" aria-labelledby="about-h">
+      <figure ref={ref} className={`photo ${inView ? "locked" : ""}`}>
+        <img src={photo} alt="Zakaria Amgrout standing under a neon CODE'212 sign" width="900" height="1055" loading="lazy" />
+        <div className="photo-scan" aria-hidden="true" />
+        <div
+          className="detect"
+          aria-hidden="true"
+          style={{
+            "--l": `${FACE.left}%`,
+            "--t": `${FACE.top}%`,
+            "--w": `${FACE.width}%`,
+            "--h": `${FACE.height}%`,
+          }}
         >
-          <div className="relative group">
-            <div className="absolute -inset-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
-            <img
-              className="relative rounded-2xl w-full h-auto object-cover shadow-2xl"
-              src={aboutImg}
-              alt="About me"
-            />
-          </div>
-        </motion.div>
+          <span className="detect-tag">face · zakaria</span>
+        </div>
+      </figure>
 
-        <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="w-full lg:w-6/12"
-        >
-          <div className="grid grid-cols-2 gap-4 mb-8">
-            {highlights.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="glass p-4 rounded-xl hover:bg-white/10 transition-all duration-300 group cursor-pointer"
-              >
-                <div className="text-2xl text-purple-400 mb-2 group-hover:scale-110 transition-transform">
-                  {item.icon}
-                </div>
-                <h3 className="font-semibold text-white">{item.title}</h3>
-                <p className="text-neutral-400 text-sm">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <p className="text-neutral-300 text-base sm:text-lg leading-relaxed">
-            {ABOUT_TEXT}
-          </p>
-        </motion.div>
-      </div>
+      <Reveal className="about-text">
+        <h2 id="about-h">About</h2>
+        <p>
+          I'm an AI engineer with a Master's in Artificial Intelligence and Data Science from the Faculty of Science and
+          Technology in Tangier. My work spans healthcare AI, real-time big-data analytics and LLM-driven automation, and I
+          care most about taking systems from prototype to something people actually run.
+        </p>
+        <p>
+          Most recently, at NTT DATA, I built a platform that writes JUnit tests for Spring Boot projects by combining static
+          analysis with retrieval-augmented generation. Before that I built ML and LLM features for a healthcare platform at
+          DIGIUP.
+        </p>
+        <dl className="about-facts">
+          <div><dt>Based in</dt><dd>{PROFILE.location}</dd></div>
+          <div><dt>Languages</dt><dd>Arabic, English, French</dd></div>
+          <div><dt>Looking for</dt><dd>AI Engineer or Data Scientist roles</dd></div>
+        </dl>
+      </Reveal>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

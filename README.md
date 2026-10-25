@@ -1,8 +1,14 @@
-# React + Vite
+# Zakaria Amgrout — portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite site deployed to GitHub Pages at https://blueskullmrx.github.io/portfolio
 
-Currently, two official plugins are available:
+- All content lives in `src/data.js` (experience, projects, skills). Edit there, not in the components.
+- `public/cv.pdf` is the CV behind the "Download CV" buttons.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev      # local preview
+npm run build    # production build in dist/
+```
+
+Pushing to `main` triggers `.github/workflows/deploy.yaml`, which builds and deploys to Pages.
